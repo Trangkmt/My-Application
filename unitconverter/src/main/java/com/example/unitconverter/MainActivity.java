@@ -1,5 +1,6 @@
 package com.example.unitconverter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,10 +24,17 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        EditText editTextCelcius = findViewById(R.id.editTextCelcius);
+        EditText editTextCelsius = findViewById(R.id.editTextCelsius);
         Button buttonConvert = findViewById(R.id.buttonConvert);
 
-        buttonConvert =
+        buttonConvert.setOnClickListener(v-> {
+            double celsius = Double.parseDouble(editTextCelsius.getText().toString());
+            double farenheit = celsius * 1.8 + 32;
+
+            Intent intent = new Intent(MainActivity.this, ResultActivity.class);
+            intent.putExtra("farenheit", farenheit);
+            startActivity(intent);
+        });
     }
 }
 

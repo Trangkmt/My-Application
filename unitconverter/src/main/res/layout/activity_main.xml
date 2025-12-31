@@ -12,28 +12,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Convert"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="445dp" />
+        android:textSize="34sp"
+        app:iconSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCelsius"
+        app:layout_constraintVertical_bias="0.354" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Unit Converter"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="126dp" />
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCelsius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextCelsius"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="89dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="492dp"
         android:ems="10"
         android:inputType="number"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,8 @@ public class ResultActivity extends AppCompatActivity {
 
         double farenheint = intent.getDoubleExtra("farenheit",0);
 
-        TextView tvResult = findViewById(R.id.tvResult);
+        TextView tvResult;
+        tvResult = findViewById(R.id.tvResult);
         tvResult.setText(""+farenheint);
     }
 }
