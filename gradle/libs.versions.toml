@@ -7,6 +7,8 @@ junit = "4.13.2"
 ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 activity = "1.8.0"
+activity-version = "1.12.2"
+mathparser-org-mxparser = "6.1.0"
 
 [libraries]
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
@@ -16,6 +18,8 @@ constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayo
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "ext-junit" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity-version" }
+mathparser-org-mxparser = { module = "org.mariuszgromada.math:MathParser.org-mXparser", version.ref = "mathparser-org-mxparser" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
