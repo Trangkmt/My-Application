@@ -9,6 +9,7 @@ espresso-core = "3.5.1"
 activity = "1.8.0"
 activity-version = "1.12.2"
 mathparser-org-mxparser = "6.1.0"
+play-services-maps = "20.0.0"
 
 [libraries]
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
@@ -20,6 +21,7 @@ ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "ext-ju
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity-version" }
 mathparser-org-mxparser = { module = "org.mariuszgromada.math:MathParser.org-mXparser", version.ref = "mathparser-org-mxparser" }
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "play-services-maps" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
