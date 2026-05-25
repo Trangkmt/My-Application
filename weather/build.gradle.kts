@@ -4,9 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.weather"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.weather"
@@ -39,6 +37,9 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.constraintlayout)
     implementation(libs.play.services.maps)
+    // Thêm trực tiếp thư viện location
+    implementation("com.google.android.gms:play-services-location:21.3.0")
+    implementation(libs.androidx.preference)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

@@ -19,6 +19,15 @@
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:clickable="true"
+                app:srcCompat="@drawable/refresh_button" />
+
             <TextView
                 android:id="@+id/locationTextView"
                 android:layout_width="wrap_content"
@@ -39,6 +48,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center">
+
                 <TextView
                     android:id="@+id/tempTextView"
                     android:layout_width="0dp"
@@ -47,6 +57,7 @@
                     android:gravity="center"
                     android:text="🌡️°C"
                     android:textSize="50sp" />
+
                 <TextView
                     android:id="@+id/humidTextView"
                     android:layout_width="0dp"
@@ -86,6 +97,31 @@
                     android:text="🌪️ km/h"
                     android:textSize="30sp" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/apparent_temp_label" />
+
+            <TextView
+                android:id="@+id/apparent_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="--" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pressure_label" />
+
+            <TextView
+                android:id="@+id/surface_pressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="--" />
+
         </LinearLayout>
         <ProgressBar
             android:id="@+id/progressBar"
@@ -93,15 +129,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:visibility="visible" />
+            android:visibility="gone" />
     </FrameLayout>
 
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="411dp"
+        android:layout_height="348dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1"
-        tools:ignore="MissingClass" />
+        tools:ignore="MissingClass"
+        tools:layout_editor_absoluteX="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

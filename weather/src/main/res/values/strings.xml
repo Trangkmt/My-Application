@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Weather</string>
+    <string name="settings">Cài đặt</string>
+    <string name="language_title">Ngôn ngữ</string>
+    <string name="unit_title">Đơn vị quãng đường</string>
+    <string name="updating_weather">Đang cập nhật thời tiết...</string>
+    <string name="unknown_location">Không xác định</string>
+    <string name="apparent_temp_label">Nhiệt độ cảm nhận</string>
+    <string name="pressure_label">Áp suất</string>
+
+    <string-array name="language_entries">
+        <item>Tiếng Việt</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>vi</item>
+        <item>en</item>
+    </string-array>
+    <string-array name="unit_entries">
+        <item>Kilômét (km)</item>
+        <item>Dặm (mile)</item>
+    </string-array>
+    <string-array name="unit_values">
+        <item>km</item>
+        <item>mile</item>
+    </string-array>
 </resources>
